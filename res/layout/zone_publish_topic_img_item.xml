@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <com.app.choumei.hairstyle.common.SquareImageView
+        android:id="@+id/zone_publish_topic_iv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY" />
+
+    <com.app.choumei.hairstyle.common.SquareImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/roundcorner_bg_iv"
+        android:scaleType="fitXY" />
+
+</FrameLayout>

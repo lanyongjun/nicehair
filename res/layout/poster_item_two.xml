@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3.0dip"
+        android:layout_marginRight="3.0dip"
+        android:layout_marginTop="6.0dip"
+        android:background="@drawable/hairscan_poster_bg"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/poster_item_displayIv"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_margin="2.0dip"
+            android:scaleType="fitXY"
+            android:src="@drawable/general_loading" />
+
+        <LinearLayout
+            android:id="@+id/poster_item_buttomDesc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:focusable="false"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/poster_scanIv"
+                        android:layout_width="12.0dip"
+                        android:layout_height="7.0dip"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/poster_scan_iv"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:id="@+id/poster_scanNumTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4.0dip"
+                        android:layout_marginRight="6.0dip"
+                        android:layout_toRightOf="@+id/poster_scanIv"
+                        android:text="999"
+                        android:textColor="#ffacacac"
+                        android:textSize="12.0sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="1.0px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@null"
+                    android:src="@drawable/poster_scan_split_iv" />
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:focusable="false"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/poster_scanPraiseIv"
+                        android:layout_width="12.0dip"
+                        android:layout_height="12.0dip"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/poster_scan_praise_iv"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:id="@+id/poster_praiseNumTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4.0dip"
+                        android:layout_toRightOf="@+id/poster_scanPraiseIv"
+                        android:text="792"
+                        android:textColor="#ffacacac"
+                        android:textSize="12.0sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="1.0px"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@null"
+                    android:src="@drawable/poster_scan_split_iv" />
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:focusable="false"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/poster_scanCommentIv"
+                        android:layout_width="12.0dip"
+                        android:layout_height="12.0dip"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/poster_scan_comment_iv"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:id="@+id/poster_commentNumTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4.0dip"
+                        android:layout_toRightOf="@+id/poster_scanCommentIv"
+                        android:text="792"
+                        android:textColor="#ffacacac"
+                        android:textSize="12.0sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/poster_nameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6.0dip"
+                android:maxLines="2"
+                android:padding="6.0dip"
+                android:text="唯美花朵浪漫编发"
+                android:textColor="#ffacacac" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

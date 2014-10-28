@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <com.lan.nicehair.widget.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:id="@+id/fromLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_below="@+id/topbar"
+        android:background="#fff2f3ee" >
+
+        <TextView
+            android:id="@+id/post_tag_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15.0dip"
+            android:textColor="#ffef71a1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:contentDescription="@null"
+            android:src="@drawable/next_style1_selector" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffe5e5e5"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:padding="8.0dip" >
+
+        <EditText
+            android:id="@+id/post_comment_input"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/none_underline_shape"
+            android:inputType="text"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" />
+
+        <TextView
+            android:id="@+id/post_input_send"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="11.0dip"
+            android:layout_weight="4.0"
+            android:gravity="center"
+            android:text="@string/send"
+            android:textColor="#ffeb4c86"
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/layout2"
+        android:layout_below="@+id/fromLayout"
+        android:orientation="vertical" >
+
+        <com.lan.nicehair.common.refresh_list.RefreshListView
+            android:id="@+id/centerlist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/white"
+            android:dividerHeight="0dp"
+            android:drawSelectorOnTop="false"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/loading_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/poster_loading"
+        android:visibility="gone" />
+
+</RelativeLayout>

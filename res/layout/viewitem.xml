@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="62.0dip"
+    android:layout_height="62.0dip"
+    android:paddingLeft="6.0dip" >
+
+    <com.lan.nicehair.common.CircleImageView
+        android:id="@+id/hairimage"
+        android:layout_width="62.0dip"
+        android:layout_height="62.0dip"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <com.app.choumei.hairstyle.common.SquareImageView
+        android:id="@+id/hairview_itemRoundIv"
+        android:layout_width="62.0dip"
+        android:layout_height="62.0dip"
+        android:background="@drawable/hairview_selector" />
+
+</FrameLayout>

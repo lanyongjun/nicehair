@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="12.5dip"
+    android:paddingRight="12.5dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4.5dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layout_notice"
+            android:layout_width="0.0dip"
+            android:layout_height="50.5dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/topic_tag_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="28.0dip"
+                android:layout_height="28.0dip"
+                android:layout_marginRight="8.5dip"
+                android:background="@drawable/topic_notice_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zone_notice"
+                android:textColor="@color/zone_list_header"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="4.5dip"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/layout_good"
+            android:layout_width="0.0dip"
+            android:layout_height="50.5dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/topic_tag_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="28.0dip"
+                android:layout_height="28.0dip"
+                android:layout_marginRight="8.5dip"
+                android:background="@drawable/topic_good_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zone_good"
+                android:textColor="@color/zone_list_header"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layout_hot"
+            android:layout_width="0.0dip"
+            android:layout_height="50.5dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/topic_tag_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="28.0dip"
+                android:layout_height="28.0dip"
+                android:layout_marginRight="8.5dip"
+                android:background="@drawable/topic_hot_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zone_hot"
+                android:textColor="@color/zone_list_header"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="4.5dip"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/layout_score"
+            android:layout_width="0.0dip"
+            android:layout_height="50.5dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/topic_tag_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="28.0dip"
+                android:layout_height="28.0dip"
+                android:layout_marginRight="8.5dip"
+                android:background="@drawable/topic_score_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zone_score"
+                android:textColor="@color/zone_list_header"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

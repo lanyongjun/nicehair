@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <com.lan.nicehair.widget.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/discover_changeHairRl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/discover_changeHairIv"
+                    android:layout_width="76.0dip"
+                    android:layout_height="76.0dip"
+                    android:background="@drawable/discover_changehair_selector"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/discover_changeHairIv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12.0dip"
+                    android:text="@string/change_hs"
+                    android:textColor="#ff666666"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/discover_diagnoseRl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/discover_diagnoseIv"
+                    android:layout_width="76.0dip"
+                    android:layout_height="76.0dip"
+                    android:background="@drawable/discover_diagnose_selector"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/discover_diagnoseIv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12.0dip"
+                    android:text="@string/my_diagnose"
+                    android:textColor="#ff666666"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/hair_topic_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/zone_title_bg"
+        android:paddingBottom="10.0dip"
+        android:paddingTop="15.0dip" >
+
+        <RadioGroup
+            android:id="@+id/hair_radioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="35.0dip"
+            android:layout_marginBottom="7.5dip"
+            android:layout_marginLeft="25dip"
+            android:layout_marginRight="25dip"
+            android:background="@drawable/tab_bg"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/btn_recomm_tag"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/radio_recomm_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/find_recomm_tag_text"
+                android:textColor="@drawable/wp_text_selector"
+                android:textSize="15.0sp" />
+
+            <RadioButton
+                android:id="@+id/btn_new_tag"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/radio_new_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/find_new_tag_text"
+                android:textColor="@drawable/wp_text_selector"
+                android:textSize="15.0sp" />
+
+            <RadioButton
+                android:id="@+id/btn_main_topic_tag"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@drawable/radio_topic_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/find_main_topic_tag_text"
+                android:textColor="@drawable/wp_text_selector"
+                android:textSize="15.0sp" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/hair_topic_layout" />
+
+    <LinearLayout
+        android:id="@+id/layout_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

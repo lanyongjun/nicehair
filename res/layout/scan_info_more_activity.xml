@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@drawable/scan_top_bg2" >
+
+        <LinearLayout
+            android:id="@+id/back_btn"
+            android:layout_width="70.0dip"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:contentDescription="@null"
+                android:src="@drawable/scan_back_selector" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffe5e5e5"
+        android:orientation="horizontal"
+        android:padding="8.0dip" >
+
+        <EditText
+            android:id="@id/post_comment_input"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="4.0"
+            android:background="@drawable/none_underline_shape"
+            android:inputType="text"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" />
+
+        <TextView
+            android:id="@id/post_input_send"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="9.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/send"
+            android:textColor="#ff595959"
+            android:textSize="22.0sp" />
+    </LinearLayout>
+
+    <com.app.choumei.hairstyle.widget.PullDownListView
+        android:id="@+id/more_pdlv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/layout1"
+        android:layout_below="@id/topbar" >
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@null"
+            android:dividerHeight="0.0dip"
+            android:drawSelectorOnTop="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" />
+    </com.app.choumei.hairstyle.widget.PullDownListView>
+
+    <include
+        android:id="@id/loading_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/poster_loading"
+        android:visibility="gone" />
+
+</RelativeLayout>

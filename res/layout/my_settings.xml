@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.lan.nicehair.widget.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/setting_change_secretRl"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip" >
+
+                <ImageView
+                    android:id="@+id/hairStyleIv"
+                    android:layout_width="17.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="32.0dip"
+                    android:background="@drawable/modify_password_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25.0dip"
+                    android:layout_toRightOf="@+id/hairStyleIv"
+                    android:text="@string/setting_change_password_title"
+                    android:textColor="@color/zone_list_button"
+                    android:textSize="17.0sp" />
+
+                <ImageView
+                    android:layout_width="7.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:src="@drawable/arrow_icon" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="17.0dip"
+                    android:layout_toRightOf="@+id/hairStyleIv"
+                    android:background="@color/userinfo_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_bindRl"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip" >
+
+                <ImageView
+                    android:id="@+id/hairStyleIv11"
+                    android:layout_width="18.0dip"
+                    android:layout_height="17.5dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="32.0dip"
+                    android:src="@drawable/bind_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25.0dip"
+                    android:layout_toRightOf="@+id/hairStyleIv11"
+                    android:text="@string/setting_binder_title"
+                    android:textColor="@color/zone_list_button"
+                    android:textSize="17.0sp" />
+
+                <ImageView
+                    android:layout_width="7.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:src="@drawable/arrow_icon" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="17.0dip"
+                    android:layout_toRightOf="@+id/hairStyleIv11"
+                    android:background="@color/userinfo_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_recommand_wxRl"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip" >
+
+                <ImageView
+                    android:id="@+id/hairStyleIv12"
+                    android:layout_width="21.0dip"
+                    android:layout_height="17.5dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="32.0dip"
+                    android:src="@drawable/wechat_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="22.0dip"
+                    android:layout_toRightOf="@+id/hairStyleIv12"
+                    android:text="@string/setting_share_to_wechat"
+                    android:textColor="@color/zone_list_button"
+                    android:textSize="17.0sp" />
+
+                <ImageView
+                    android:layout_width="7.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:src="@drawable/arrow_icon" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="14.0dip"
+                    android:layout_toRightOf="@+id/hairStyleIv12"
+                    android:background="@color/userinfo_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_attention_wxRl"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip" >
+
+                <ImageView
+                    android:id="@+id/hairStyleIv2"
+                    android:layout_width="18.5dip"
+                    android:layout_height="18.5dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="32.0dip"
+                    android:src="@drawable/qr_code_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25.0dip"
+                    android:layout_toRightOf="@+id/hairStyleIv2"
+                    android:text="@string/setting_attention_wx_title"
+                    android:textColor="@color/zone_list_button"
+                    android:textSize="17.0sp" />
+
+                <ImageView
+                    android:layout_width="7.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:src="@drawable/arrow_icon" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="17.0dip"
+                    android:layout_toRightOf="@+id/hairStyleIv2"
+                    android:background="@color/userinfo_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_feedbackRl"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip" >
+
+                <ImageView
+                    android:id="@+id/hairStyleIv3"
+                    android:layout_width="18.0dip"
+                    android:layout_height="18.5dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="32.0dip"
+                    android:src="@drawable/feedback_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25.0dip"
+                    android:layout_toRightOf="@+id/hairStyleIv3"
+                    android:text="@string/setting_feedback_title"
+                    android:textColor="@color/zone_list_button"
+                    android:textSize="17.0sp" />
+
+                <ImageView
+                    android:layout_width="7.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:src="@drawable/arrow_icon" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="17.0dip"
+                    android:layout_toRightOf="@+id/hairStyleIv3"
+                    android:background="@color/userinfo_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_checkversionRl"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip" >
+
+                <ImageView
+                    android:id="@+id/hairStyleIv4"
+                    android:layout_width="18.5dip"
+                    android:layout_height="18.5dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="32.0dip"
+                    android:src="@drawable/version_check_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25.0dip"
+                    android:layout_toRightOf="@+id/hairStyleIv4"
+                    android:text="@string/setting_version_check"
+                    android:textColor="@color/zone_list_button"
+                    android:textSize="17.0sp" />
+
+                <ImageView
+                    android:layout_width="7.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:src="@drawable/arrow_icon" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="17.0dip"
+                    android:layout_toRightOf="@+id/hairStyleIv4"
+                    android:background="@color/userinfo_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_aboutRl"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip" >
+
+                <ImageView
+                    android:id="@+id/hairStyleIv5"
+                    android:layout_width="19.0dip"
+                    android:layout_height="19.5dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="32.0dip"
+                    android:src="@drawable/about_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25.0dip"
+                    android:layout_toRightOf="@+id/hairStyleIv5"
+                    android:text="@string/me"
+                    android:textColor="@color/zone_list_button"
+                    android:textSize="17.0sp" />
+
+                <ImageView
+                    android:layout_width="7.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:src="@drawable/arrow_icon" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="17.0dip"
+                    android:layout_toRightOf="@+id/hairStyleIv5"
+                    android:background="@color/userinfo_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_helpRl"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/hairStyleIv6"
+                    android:layout_width="18.0dip"
+                    android:layout_height="18.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="32.0dip"
+                    android:src="@drawable/help_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25.0dip"
+                    android:layout_toRightOf="@+id/hairStyleIv6"
+                    android:text="@string/help"
+                    android:textColor="@color/zone_list_button"
+                    android:textSize="17.0sp" />
+
+                <ImageView
+                    android:layout_width="7.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:src="@drawable/arrow_icon" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="17.0dip"
+                    android:layout_toRightOf="@+id/hairStyleIv6"
+                    android:background="@color/userinfo_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setting_clearCacheRl"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip" >
+
+                <ImageView
+                    android:id="@+id/hairStyleIv7"
+                    android:layout_width="19.5dip"
+                    android:layout_height="17.0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="32.0dip"
+                    android:src="@drawable/clear_cache_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25.0dip"
+                    android:layout_toRightOf="@+id/hairStyleIv7"
+                    android:text="@string/setting_clear_cache"
+                    android:textColor="@color/zone_list_button"
+                    android:textSize="17.0sp" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip" >
+
+                    <ImageView
+                        android:id="@+id/clear_cacheDefIv"
+                        android:layout_width="7.0dip"
+                        android:layout_height="15.0dip"
+                        android:layout_gravity="center"
+                        android:src="@drawable/arrow_icon" />
+
+                    <ImageView
+                        android:id="@+id/clear_cacheLoadingIv"
+                        android:layout_width="28.0dip"
+                        android:layout_height="30.0dip"
+                        android:layout_gravity="center"
+                        android:src="@drawable/clear_cache_loading"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="17.0dip"
+                    android:layout_toRightOf="@+id/hairStyleIv7"
+                    android:background="@color/userinfo_line" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/setting_sign_outTv"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginBottom="35.0dip"
+                android:layout_marginLeft="19.0dip"
+                android:layout_marginRight="19.0dip"
+                android:layout_marginTop="35.0dip"
+                android:background="@drawable/setting_logout"
+                android:gravity="center"
+                android:text="@string/setting_logout"
+                android:textColor="@color/white"
+                android:textSize="17.0sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

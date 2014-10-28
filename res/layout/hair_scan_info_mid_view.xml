@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_main_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="2.0"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/scan_info_top1_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:layout_marginTop="10.0dip"
+                android:contentDescription="@null"
+                android:src="@drawable/scan_info_top1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/scan_info_top2_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3.0dip"
+                android:contentDescription="@null"
+                android:src="@drawable/scan_info_top2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/scan_info_top3_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginLeft="3.0dip"
+                android:contentDescription="@null"
+                android:src="@drawable/scan_info_top3" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/scan_info_top1_layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/scan_info_line" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:contentDescription="@null"
+                android:paddingTop="15.0dip"
+                android:src="@drawable/scan_info_point1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/scan_info_top2_layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/scan_info_line" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:contentDescription="@null"
+                android:src="@drawable/scan_info_point2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/scan_info_top3_layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/scan_info_line" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true"
+                android:contentDescription="@null"
+                android:paddingBottom="12.0dip"
+                android:src="@drawable/scan_info_point3" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:layout_weight="12.0"
+        android:background="@drawable/radius_layout_shape"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/scan_info_top1_layout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10.0dip" >
+
+            <com.lan.nicehair.common.CircleImageView
+                android:id="@+id/scan_top_head1"
+                android:layout_width="42.0dip"
+                android:layout_height="42.0dip"
+                android:layout_centerVertical="true"
+                android:src="@drawable/zone_list_profile" />
+
+            <TextView
+                android:id="@+id/scan_top_username1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginTop="15.0dip"
+                android:layout_toRightOf="@+id/scan_top_head1"
+                android:textColor="#ff6e6e6e"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/scan_top_lv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scan_top_username1"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginTop="3.0dip"
+                android:layout_toRightOf="@+id/scan_top_head1"
+                android:drawableLeft="@drawable/scan_top_hz" />
+
+            <ImageView
+                android:id="@+id/scan_top_img1"
+                android:layout_width="75.0dip"
+                android:layout_height="75.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/scan_top_img1_shape"
+                android:padding="2.0dip"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/line_1"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_0.5"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/scan_info_line"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/scan_info_top2_layout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10.0dip"
+            android:visibility="gone" >
+
+            <com.lan.nicehair.common.CircleImageView
+                android:id="@+id/scan_top_head2"
+                android:layout_width="42.0dip"
+                android:layout_height="42.0dip"
+                android:layout_centerVertical="true"
+                android:src="@drawable/zone_list_profile" />
+
+            <TextView
+                android:id="@+id/scan_top_username2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginTop="15.0dip"
+                android:layout_toRightOf="@+id/scan_top_head2"
+                android:textColor="#ff6e6e6e"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/scan_top_lv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scan_top_username2"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginTop="3.0dip"
+                android:layout_toRightOf="@+id/scan_top_head2"
+                android:drawableLeft="@drawable/scan_top_hz" />
+
+            <ImageView
+                android:id="@+id/scan_top_img2"
+                android:layout_width="75.0dip"
+                android:layout_height="75.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/scan_top_img2_shape"
+                android:padding="2.0dip"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/line_2"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_0.5"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/scan_info_line"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/scan_info_top3_layout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10.0dip"
+            android:visibility="gone" >
+
+            <com.lan.nicehair.common.CircleImageView
+                android:id="@+id/scan_top_head3"
+                android:layout_width="42.0dip"
+                android:layout_height="42.0dip"
+                android:layout_centerVertical="true"
+                android:src="@drawable/zone_list_profile" />
+
+            <TextView
+                android:id="@+id/scan_top_username3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginTop="15.0dip"
+                android:layout_toRightOf="@+id/scan_top_head3"
+                android:textColor="#ff6e6e6e"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:id="@+id/scan_top_lv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scan_top_username3"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginTop="3.0dip"
+                android:layout_toRightOf="@+id/scan_top_head3"
+                android:drawableLeft="@drawable/scan_top_hz" />
+
+            <ImageView
+                android:id="@+id/scan_top_img3"
+                android:layout_width="75.0dip"
+                android:layout_height="75.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/scan_top_img3_shape"
+                android:padding="2.0dip"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

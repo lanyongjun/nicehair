@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/zone_section_topInfoRl"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/zone_base_top_bg" >
+
+    <ImageView
+        android:id="@+id/zone_section_incon"
+        android:layout_width="66.0dip"
+        android:layout_height="66.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8.0dip"
+        android:background="@drawable/zone_bianfa_section_icon"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/zone_section_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zone_section_incon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6.0dip"
+        android:text="编发课程"
+        android:textColor="#ffffffff"
+        android:textSize="16.0sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35.0dip"
+        android:layout_below="@+id/zone_section_title" >
+
+        <ImageView
+            android:id="@+id/zone_section_scan_iconIv"
+            android:layout_width="20.0dip"
+            android:layout_height="14.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4.0dip"
+            android:background="@drawable/zone_section_scan_icon"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/zone_section_scanNumTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6.0dip"
+            android:layout_toRightOf="@+id/zone_section_scan_iconIv"
+            android:text="1358w"
+            android:textColor="#ffede7e6" />
+
+        <ImageView
+            android:id="@+id/zone_section_interestIv"
+            android:layout_width="70.0dip"
+            android:layout_height="20.0dip"
+            android:layout_centerInParent="true"
+            android:contentDescription="@null"
+            android:src="@drawable/zone_section_interest" />
+
+        <TextView
+            android:id="@+id/zone_section_interestNumTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:text="258"
+            android:textColor="#ffede7e6" />
+
+        <ImageView
+            android:layout_width="14.0dip"
+            android:layout_height="14.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6.0dip"
+            android:layout_toLeftOf="@+id/zone_section_interestNumTv"
+            android:background="@drawable/zone_section_comment_icon" />
+    </RelativeLayout>
+
+</RelativeLayout>

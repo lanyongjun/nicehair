@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.app.choumei.hairstyle"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:background="@drawable/scan_top_bg2" >
+
+            <Button
+                android:id="@+id/btn_right"
+                android:layout_width="67.0dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/transparent"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:textSize="18.0sp" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toLeftOf="@+id/btn_right"
+                android:background="@drawable/search_input_bg"
+                android:paddingLeft="8.5dip"
+                android:paddingRight="8.5dip" >
+
+                <ImageView
+                    android:id="@+id/iv_search_icon"
+                    android:layout_width="13.0dip"
+                    android:layout_height="13.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="4.0dip"
+                    android:background="@drawable/search_icon" />
+
+                <ImageView
+                    android:id="@+id/iv_search_clear"
+                    android:layout_width="21.0dip"
+                    android:layout_height="21.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/search_clear_icon"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/et_search_topic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toLeftOf="@+id/iv_search_clear"
+                    android:layout_toRightOf="@+id/iv_search_icon"
+                    android:background="@color/transparent"
+                    android:hint="@string/search_input_hint"
+                    android:singleLine="true"
+                    android:textColor="@color/zone_list_username"
+                    android:textColorHint="@color/zone_search_hint"
+                    android:textSize="14.0sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_loading"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <com.lan.nicehair.common.refresh_list.RefreshListView
+            android:id="@+id/list_zone_topic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/zone_bg"
+            android:dividerHeight="12.5dip"
+            android:fadingEdge="none"
+            android:listSelector="@color/transparent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffe5e5e5"
+        android:orientation="horizontal"
+        android:padding="8.0dip"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/post_input_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/input_camera" />
+
+        <EditText
+            android:id="@+id/post_comment_input"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="4.0"
+            android:background="@drawable/none_underline_shape"
+            android:inputType="text"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" />
+
+        <TextView
+            android:id="@+id/post_input_send"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="9.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/send"
+            android:textColor="#ff595959"
+            android:textSize="22.0sp" />
+    </LinearLayout>
+
+</RelativeLayout>

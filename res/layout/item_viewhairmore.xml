@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        layout="@layout/item_viewhair_header" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/split2" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="110.0dip"
+        android:background="#ffffffff"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="3.0dip" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2.0dip" >
+
+            <com.app.choumei.hairstyle.common.MyImageView
+                android:id="@+id/categoryIV"
+                android:layout_width="88.0dip"
+                android:layout_height="88.0dip"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/newAddTV"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_gravity="top|right|center"
+                android:layout_marginLeft="12.0dip"
+                android:background="@drawable/newadd_tip"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="@color/white" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:padding="8.0dip" >
+
+            <TextView
+                android:id="@+id/secondCategoryNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="青春无敌波波头"
+                android:textColor="#ff3b3b3b"
+                android:textSize="20.0sp" />
+
+            <TextView
+                android:id="@+id/totalAndNewCountTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:text="共53款新增15款"
+                android:textColor="#ff999999"
+                android:textSize="16.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@drawable/split2" />
+
+</LinearLayout>

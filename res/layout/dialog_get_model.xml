@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="16.0dip"
+        android:paddingTop="20.0dip" >
+
+        <Button
+            android:id="@+id/btn_choose_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginBottom="16.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:background="@drawable/btn_bind_cancel"
+            android:text="@string/get_photo_choose"
+            android:textColor="@color/white"
+            android:textSize="17.0sp" />
+
+        <Button
+            android:id="@+id/btn_take_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginBottom="16.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:background="@drawable/btn_bind_cancel"
+            android:text="@string/paizhao"
+            android:textColor="@color/white"
+            android:textSize="17.0sp" />
+
+        <Button
+            android:id="@+id/btn_model"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginBottom="16.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:background="@drawable/btn_bind_cancel"
+            android:text="@string/top_model"
+            android:textColor="@color/white"
+            android:textSize="17.0sp" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:background="@drawable/btn_bind_cancel_"
+            android:text="@string/cancel"
+            android:textColor="@color/white"
+            android:textSize="17.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

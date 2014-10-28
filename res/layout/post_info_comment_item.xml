@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.lan.nicehair.common.CircleImageView
+            android:id="@+id/post_info_head"
+            android:layout_width="40.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:src="@drawable/zone_list_profile" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/post_info_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="苏锵锵"
+                android:textColor="#ff576b95"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/post_addtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/post_info_username"
+                android:layout_marginTop="5.0dip"
+                android:text="刚刚"
+                android:textColor="#ffc9c9c9"
+                android:textSize="13.0sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical" >
+
+            <TextView
+                android:id="@+id/post_comment_huifu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="13.0dip"
+                android:drawableLeft="@drawable/post_comment_img"
+                android:text="@string/post_info_comment"
+                android:textColor="#ffed7aa5" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/post_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginLeft="60.0dip"
+        android:layout_marginTop="5.0dip"
+        android:textColor="#ff737371"
+        android:textSize="15.0sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5.0dip"
+        android:background="@drawable/split2" />
+
+</LinearLayout>

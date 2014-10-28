@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loadingRl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff2f3ee"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/proccess_loadingIv"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:background="@drawable/image_loadding" />
+
+</RelativeLayout>

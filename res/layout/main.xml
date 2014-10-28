@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/all_rl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/tab_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0" >
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_gravity="bottom"
+                    android:background="@color/main_bottom_line" />
+            </FrameLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/tab_height"
+                android:visibility="gone" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/tab_height"
+                android:layout_gravity="bottom"
+                android:background="@drawable/hair_bar_bg"
+                android:orientation="horizontal"
+                android:paddingTop="4dp" >
+
+                <RadioButton
+                    android:id="@+id/radio_choumeibang"
+                    style="@style/main_tab_bottom"
+                    android:checked="true"
+                    android:drawablePadding="4dp"
+                    android:drawableTop="@drawable/tab_zone_selector"
+                    android:tag="radio_choumeibang"
+                    android:text="@string/main_choumeibang" />
+
+                <RadioButton
+                    android:id="@+id/radio_hairscan"
+                    style="@style/main_tab_bottom"
+                    android:drawablePadding="1dp"
+                    android:drawableTop="@drawable/tab_hairshow_selector"
+                    android:tag="radio_hairscan"
+                    android:text="@string/main_hairscan" />
+
+                <RadioButton
+                    android:id="@+id/radio_discover"
+                    style="@style/main_tab_bottom"
+                    android:drawableTop="@drawable/tab_discover_selector"
+                    android:tag="radio_discover"
+                    android:text="@string/main_discover" />
+
+                <RadioButton
+                    android:id="@+id/radio_me"
+                    style="@style/main_tab_bottom"
+                    android:drawablePadding="1dp"
+                    android:drawableTop="@drawable/tab_me_selector"
+                    android:tag="radio_me"
+                    android:text="@string/main_me" />
+            </RadioGroup>
+        </LinearLayout>
+    </TabHost>
+
+    <LinearLayout
+        android:id="@+id/layout_comment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffe5e5e5"
+        android:orientation="horizontal"
+        android:padding="8.0dip"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/post_input_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/input_camera"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/post_comment_input"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="4.0"
+            android:background="@drawable/none_underline_shape"
+            android:inputType="text"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" />
+
+        <TextView
+            android:id="@+id/post_input_send"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="9.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/send"
+            android:textColor="#ff595959"
+            android:textSize="22.0sp" />
+    </LinearLayout>
+
+</RelativeLayout>

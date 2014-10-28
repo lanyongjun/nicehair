@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:baselineAligned="false"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" >
+
+            <com.app.choumei.hairstyle.common.MyImageView
+                android:id="@+id/more_user_head"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_marginLeft="6.0dip"
+                android:layout_marginTop="10.0dip"
+                android:src="@drawable/headportrait_def" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="6.0"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10.0dip" >
+
+            <TextView
+                android:id="@+id/more_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:gravity="left"
+                android:textColor="#ff535353"
+                android:textSize="16.0sp" />
+
+            <com.app.choumei.hairstyle.common.MyImageView
+                android:id="@+id/more_post_img"
+                android:layout_width="fill_parent"
+                android:layout_height="150.0dip"
+                android:layout_marginTop="8.0dip"
+                android:maxWidth="280.0dip"
+                android:scaleType="centerCrop"
+                android:src="@drawable/zone_index_item_default" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/more_post_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ff6e6e6e"
+                    android:textSize="12.0sp" />
+
+                <ImageView
+                    android:id="@+id/comment_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5.0dip"
+                    android:contentDescription="@null"
+                    android:src="@drawable/scan_item_comment_img" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/replay_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/fit_btn"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:drawableTop="@drawable/scan_right"
+                    android:gravity="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/not_fit_btn"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:drawableTop="@drawable/scan_no_right"
+                    android:gravity="center"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:src="@drawable/scan_info_line" />
+
+</LinearLayout>

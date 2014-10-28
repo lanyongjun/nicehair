@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="indicator_right_padding">10.0dip</dimen>
+    <dimen name="indicator_corner_radius">12.0dip</dimen>
+    <dimen name="indicator_internal_padding">4.0dip</dimen>
+    <dimen name="header_footer_left_right_padding">24.0dip</dimen>
+    <dimen name="header_footer_top_bottom_padding">12.0dip</dimen>
+    <dimen name="alphabet_size">12.0dip</dimen>
+    <dimen name="umeng_socialize_pad_window_height">350.0dip</dimen>
+    <dimen name="umeng_socialize_pad_window_width">580.0dip</dimen>
+    <dimen name="pop_menu_item_width">80.0dip</dimen>
+    <dimen name="pop_menu_item_height">120.0dip</dimen>
+    <dimen name="pop_menu_item_padding">5.0dip</dimen>
+    <dimen name="hair_container_title_height">85.0dip</dimen>
+    <dimen name="hair_container_height">85.0dip</dimen>
+    <dimen name="headerbar_height">45.0dip</dimen>
+    <dimen name="bottombar_height">60.0dip</dimen>
+    <dimen name="tab_corner_radius">4.0dip</dimen>
+    <dimen name="tab_space">0.0dip</dimen>
+    <dimen name="tab_height">54.0dip</dimen>
+    <dimen name="tab_line_bottom">48.0dip</dimen>
+    <dimen name="tab_transparent_overlay_height">25.0dip</dimen>
+    <dimen name="updatebar_height">62.0dip</dimen>
+    <dimen name="updatebar_content_height">60.0dip</dimen>
+    <dimen name="updatebar_padding">10.0dip</dimen>
+    <dimen name="height_0.5">0.5dip</dimen>
+</resources>

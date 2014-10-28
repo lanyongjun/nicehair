@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <com.app.choumei.hairstyle.widget.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/regist_inputLl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="18.0dip"
+        android:layout_marginRight="18.0dip"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip" >
+
+            <ImageView
+                android:id="@+id/mail"
+                android:layout_width="18.0dip"
+                android:layout_height="15.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11.0dip"
+                android:background="@drawable/register_email_icon" />
+
+            <EditText
+                android:id="@+id/regist_mail"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11.0dip"
+                android:layout_marginRight="11.0dip"
+                android:layout_toRightOf="@+id/mail"
+                android:background="@null"
+                android:hint="@string/register_email"
+                android:inputType="textEmailAddress"
+                android:textColorHighlight="@color/zone_list_time"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_alignParentBottom="true"
+                android:background="@color/userinfo_line" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip" >
+
+            <ImageView
+                android:id="@+id/mail1"
+                android:layout_width="17.0dip"
+                android:layout_height="18.5dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.0dip"
+                android:background="@drawable/register_nickname_icon" />
+
+            <EditText
+                android:id="@+id/regist_nickname"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="11.0dip"
+                android:layout_toRightOf="@+id/mail1"
+                android:background="@null"
+                android:hint="@string/register_nickname"
+                android:maxLength="10"
+                android:textColorHighlight="@color/zone_list_time"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_alignParentBottom="true"
+                android:background="@color/userinfo_line" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip" >
+
+            <ImageView
+                android:id="@+id/mail2"
+                android:layout_width="10.0dip"
+                android:layout_height="18.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15.0dip"
+                android:background="@drawable/register_phone_icon" />
+
+            <EditText
+                android:id="@+id/regist_tel_num"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.0dip"
+                android:layout_marginRight="11.0dip"
+                android:layout_toRightOf="@+id/mail2"
+                android:background="@null"
+                android:hint="@string/register_phone"
+                android:inputType="phone"
+                android:textColorHighlight="@color/zone_list_time"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_alignParentBottom="true"
+                android:background="@color/userinfo_line" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip" >
+
+            <ImageView
+                android:id="@+id/mail3"
+                android:layout_width="16.0dip"
+                android:layout_height="18.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.0dip"
+                android:background="@drawable/register_password_icon" />
+
+            <EditText
+                android:id="@+id/regist_secret"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="9.0dip"
+                android:layout_marginRight="11.0dip"
+                android:layout_toRightOf="@+id/mail3"
+                android:background="@null"
+                android:hint="@string/register_password"
+                android:password="true"
+                android:textColorHighlight="@color/zone_list_time"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_alignParentBottom="true"
+                android:background="@color/userinfo_line" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip" >
+
+            <ImageView
+                android:id="@+id/mail4"
+                android:layout_width="18.0dip"
+                android:layout_height="18.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11.0dip"
+                android:background="@drawable/register_pw_repeat_icon" />
+
+            <EditText
+                android:id="@+id/regist_confirm_secret"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="11.0dip"
+                android:layout_toRightOf="@+id/mail4"
+                android:background="@null"
+                android:hint="@string/modify_pw_repeat_password"
+                android:password="true"
+                android:textColorHighlight="@color/zone_list_time"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_alignParentBottom="true"
+                android:background="@color/userinfo_line" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/regist_button"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:layout_below="@+id/regist_inputLl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginTop="50.0dip"
+        android:background="@drawable/btn_bind_cancel"
+        android:text="@string/top_register"
+        android:textColor="@color/white"
+        android:textSize="16.0sp" />
+
+</RelativeLayout>

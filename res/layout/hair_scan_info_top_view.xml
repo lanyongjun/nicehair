@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/radius_layout_shape"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/poster_show_topFl"
+            android:layout_width="fill_parent"
+            android:layout_height="300.0dip" >
+
+            <ImageView
+                android:id="@+id/hair_iv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:padding="1.0dip"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:id="@+id/poster_detail_IndicatorLL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="10.0dip"
+                android:orientation="horizontal" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/hair_content_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/poster_show_topFl"
+            android:layout_marginTop="5.0dip"
+            android:gravity="left"
+            android:paddingLeft="12.0dip"
+            android:textColor="#ff5c5c5c"
+            android:textSize="18.0sp" />
+
+        <LinearLayout
+            android:id="@+id/special_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hair_content_tv"
+            android:orientation="vertical"
+            android:padding="15.0dip" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/hair_scan_info_mid_view" />
+
+</LinearLayout>

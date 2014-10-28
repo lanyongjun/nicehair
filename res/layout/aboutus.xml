@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <com.lan.nicehair.widget.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/aboutus_buttomLl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4.0dip"
+            android:text="Email:service@choumei.cn"
+            android:textColor="@color/about_email"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4.0dip"
+            android:text="Tel:0755-88371130"
+            android:textColor="@color/about_email"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="12.0dip"
+            android:layout_marginTop="6.0dip"
+            android:text="版权所有 © 臭美文化传播"
+            android:textColor="@color/about_email"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/aboutus_iconRl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar"
+        android:layout_marginTop="30.0dip" >
+
+        <ImageView
+            android:id="@+id/aboutus_iconIv"
+            android:layout_width="90.0dip"
+            android:layout_height="90.0dip"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/aboutus_top_icon" />
+
+        <TextView
+            android:id="@+id/choumei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/aboutus_iconIv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6.0dip"
+            android:text="@string/app_name"
+            android:textColor="@+color/zone_list_header"
+            android:textSize="21.5sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/choumei"
+            android:layout_centerHorizontal="true"
+            android:text="@string/aboutus_version"
+            android:textColor="@color/bind_cancel"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/aboutus_intr"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/aboutus_buttomLl"
+        android:layout_below="@+id/aboutus_iconRl"
+        android:layout_marginLeft="16.0dip"
+        android:layout_marginRight="16.0dip"
+        android:layout_marginTop="16.0dip"
+        android:lineSpacingExtra="6.0dip"
+        android:text="@string/aboutus_intro"
+        android:textColor="@color/zone_list_button"
+        android:textSize="16.0sp" />
+
+</RelativeLayout>

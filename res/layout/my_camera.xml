@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.lan.nicehair.widget.CameraPreview
+        android:id="@+id/camera_surfaceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:id="@+id/zhezhao_iv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/preview_background" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="78.0dip"
+        android:layout_gravity="bottom"
+        android:background="#50000000"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/take_pictureIv"
+            android:layout_width="70.0dip"
+            android:layout_height="70.0dip"
+            android:background="@drawable/changing_photograph" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="42.0dip"
+        android:layout_height="34.0dip"
+        android:layout_marginLeft="12.0dip"
+        android:layout_marginTop="28.0dip"
+        android:background="@drawable/changing_back" />
+
+    <ImageView
+        android:id="@+id/change_camera"
+        android:layout_width="42.0dip"
+        android:layout_height="34.0dip"
+        android:layout_gravity="right"
+        android:layout_marginRight="12.0dip"
+        android:layout_marginTop="28.0dip"
+        android:background="@drawable/changing_camera" />
+
+</FrameLayout>

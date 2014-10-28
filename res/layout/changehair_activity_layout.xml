@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/responsetouchContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/user_tryonFl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ImageView
+            android:id="@+id/modelIv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/modelfourth" />
+
+        <com.lan.nicehair.common.MultiTouchImageView
+            android:id="@+id/hairIv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="110dp"
+            android:paddingTop="120dp"
+            android:scaleType="matrix" />
+    </RelativeLayout>
+
+    <com.lan.nicehair.widget.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip" />
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="48.0dip"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/takephotoIv"
+            android:layout_width="46.0dip"
+            android:layout_height="46.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="13.0dip"
+            android:layout_marginTop="8.0dip"
+            android:background="@drawable/photograph_button" />
+
+        <ImageView
+            android:id="@+id/shake_imageIv"
+            android:layout_width="38.0dip"
+            android:layout_height="32.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12.0dip"
+            android:layout_marginTop="70.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/shake_icon" />
+
+        <ImageView
+            android:id="@+id/one_key_changeIv"
+            android:layout_width="46.0dip"
+            android:layout_height="46.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13.0dip"
+            android:layout_marginTop="6.0dip"
+            android:scaleType="centerInside"
+            android:src="@drawable/chameleon_button" />
+    </RelativeLayout>
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="126.0dip"
+        android:layout_alignParentBottom="true"
+        layout="@layout/hair_choose_two" />
+
+</RelativeLayout>

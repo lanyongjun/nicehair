@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.lan.nicehair"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="267.5dip"
+        android:background="@drawable/user_main_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="45.0dip"
+            android:layout_marginTop="8.0dip" >
+
+            <TextView
+                android:id="@+id/top_back_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4.0dip"
+                android:drawableLeft="@drawable/share_return"
+                android:gravity="center_vertical"
+                android:text="@string/back"
+                android:textColor="@color/white"
+                android:textSize="17.5dip" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/other_user_page"
+                android:textColor="@color/white"
+                android:textSize="21.5sp" />
+        </RelativeLayout>
+
+        <com.lan.nicehair.common.CircleImageView
+            android:id="@+id/miv_user_header"
+            android:layout_width="78.0dip"
+            android:layout_height="78.0dip"
+            android:layout_marginBottom="17.0dip"
+            android:contentDescription="@null"
+            android:src="@drawable/headportrait_def"
+            app:border_color="@color/transparent"
+            app:border_width="0dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:id="@+id/tv_user_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:textColor="@color/other_user_level"
+                android:textSize="11.5sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

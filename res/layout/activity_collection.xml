@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.lan.nicehair.widget.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="3.5dip"
+        android:paddingTop="3.5dip" >
+
+        <LinearLayout
+            android:layout_width="334.0dip"
+            android:layout_height="30.0dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="12.5dip"
+            android:layout_marginRight="12.5dip"
+            android:background="@drawable/collection_tab_bg"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_collection_topic"
+                android:layout_width="0.0dip"
+                android:layout_height="30.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/collection_tab_left_press"
+                android:text="@string/my_collection_topics"
+                android:textColor="@color/white"
+                android:textSize="15.0sp" />
+
+            <Button
+                android:id="@+id/btn_collection_hair"
+                android:layout_width="0.0dip"
+                android:layout_height="30.0dip"
+                android:layout_weight="1.0"
+                android:background="@color/transparent"
+                android:text="@string/my_collection_hair"
+                android:textColor="@color/zone_title_bg"
+                android:textSize="15.0sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_collection"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.lan.nicehair"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="267.5dip"
+        android:background="@drawable/user_main_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="45.0dip"
+            android:layout_marginTop="8.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/main_me"
+                android:textColor="@color/white"
+                android:textSize="21.5sp" />
+
+            <ImageView
+                android:id="@+id/my_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/btn_setting" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <com.lan.nicehair.common.CircleImageView
+                android:id="@+id/miv_user_header"
+                android:layout_width="82.0dip"
+                android:layout_height="82.0dip"
+                android:layout_centerInParent="true"
+                android:contentDescription="@null"
+                android:src="@drawable/zone_list_profile"
+                app:border_color="@color/transparent"
+                app:border_width="0dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="62dp"
+                android:src="@drawable/edit_portrait" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18.0sp" />
+
+            <TextView
+                android:id="@+id/tv_user_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.0dip"
+                android:textColor="@color/other_user_level"
+                android:textSize="11.5sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/my_messageRl"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/me_choose_bg2" >
+
+                <ImageView
+                    android:id="@+id/my_message_tag"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:background="@drawable/my_message" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_toRightOf="@+id/my_message_tag"
+                    android:text="@string/my_message"
+                    android:textColor="@color/black"
+                    android:textSize="17.0sp" />
+
+                <ImageView
+                    android:layout_width="7.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:src="@drawable/arrow_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_topicRl"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/me_choose_bg2" >
+
+                <ImageView
+                    android:id="@+id/my_topic_tag"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:background="@drawable/my_topic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_toRightOf="@+id/my_topic_tag"
+                    android:text="@string/my_topic"
+                    android:textColor="@color/black"
+                    android:textSize="17.0sp" />
+
+                <ImageView
+                    android:layout_width="7.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:src="@drawable/arrow_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_collectionRl"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/me_choose_bg2" >
+
+                <ImageView
+                    android:id="@+id/my_collection_tag"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:background="@drawable/my_collection" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_toRightOf="@+id/my_collection_tag"
+                    android:text="@string/my_collection"
+                    android:textColor="@color/black"
+                    android:textSize="17.0sp" />
+
+                <ImageView
+                    android:layout_width="7.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:src="@drawable/arrow_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_hairhistoryRl"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/me_choose_bg2" >
+
+                <ImageView
+                    android:id="@+id/my_hairhistory_tag"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:background="@drawable/my_hairhistory" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_toRightOf="@+id/my_hairhistory_tag"
+                    android:text="@string/my_hairtry_history"
+                    android:textColor="@color/black"
+                    android:textSize="17.0sp" />
+
+                <ImageView
+                    android:layout_width="7.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:src="@drawable/arrow_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_albumRl"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/me_choose_bg2" >
+
+                <ImageView
+                    android:id="@+id/my_album_tag"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:background="@drawable/my_album" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_toRightOf="@+id/my_album_tag"
+                    android:text="@string/my_hair_album"
+                    android:textColor="@color/black"
+                    android:textSize="17.0sp" />
+
+                <ImageView
+                    android:layout_width="7.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:src="@drawable/arrow_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/my_userinfoRl"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/me_choose_bg2" >
+
+                <ImageView
+                    android:id="@+id/my_userinfo_tag"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:background="@drawable/my_userinfo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_toRightOf="@+id/my_userinfo_tag"
+                    android:text="@string/setting_person_info_title"
+                    android:textColor="@color/black"
+                    android:textSize="17.0sp" />
+
+                <ImageView
+                    android:layout_width="7.0dip"
+                    android:layout_height="15.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15.0dip"
+                    android:src="@drawable/arrow_icon" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

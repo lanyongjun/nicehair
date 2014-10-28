@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="scrapped_view" type="id"/>
+    <item name="dialog_waiting" type="id"></item>
+    <item name="ui_show_text" type="id"></item>
+    <item name="ui_show_dialog" type="id"></item>
+    <item name="ui_dismiss_dialog" type="id"></item>
+    <item name="ui_update_ui" type="id"></item>
+    <item name="dialog_wireless_setting" type="id"></item>
+
+</resources>

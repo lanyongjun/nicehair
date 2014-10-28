@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6.0dip"
+        android:background="@drawable/poster_time_linesplit" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" >
+
+        <TextView
+            android:id="@+id/dayTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4.0dip"
+            android:text="04"
+            android:textColor="#ff555555"
+            android:textSize="30.0sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/dayTv" >
+
+            <TextView
+                android:id="@+id/weekTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4.0dip"
+                android:text="周日"
+                android:textColor="#ff828282"
+                android:textSize="12.0sp" />
+
+            <TextView
+                android:id="@+id/year_monthTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/weekTv"
+                android:layout_marginLeft="4.0dip"
+                android:text="14/05"
+                android:textColor="#ff828282"
+                android:textSize="12.0sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="12.0dip"
+            android:text="发布"
+            android:textColor="#ff828282"
+            android:textSize="12.0sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6.0dip"
+        android:background="@drawable/poster_time_dotsplit" />
+
+</LinearLayout>

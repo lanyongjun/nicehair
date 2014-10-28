@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="2.0"
+        android:gravity="center_horizontal" >
+
+        <com.lan.nicehair.common.CircleImageView
+            android:id="@+id/scan_item_head"
+            android:layout_width="30.0dip"
+            android:layout_height="30.0dip"
+            android:layout_marginLeft="3.0dip"
+            android:layout_marginTop="22.0dip"
+            android:src="@drawable/headportrait_def" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0.0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/scan_info_line" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30.0dip"
+            android:contentDescription="@null"
+            android:src="@drawable/scan_info_point4" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_weight="12.0"
+        android:background="@drawable/radius_layout_shape"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10.0dip" >
+
+            <TextView
+                android:id="@+id/scan_comment_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:gravity="left"
+                android:paddingLeft="5.0dip"
+                android:text="炎热的夏季，这个发型很清爽"
+                android:textColor="#ff535353"
+                android:textSize="16.0sp" />
+
+            <ImageView
+                android:id="@+id/scan_item_img"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:maxWidth="280.0dip"
+                android:scaleType="centerCrop"
+                android:src="@drawable/zone_index_item_default"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/scan_comment_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="55分钟前"
+                    android:textColor="#ff6e6e6e"
+                    android:textSize="12.0sp" />
+
+                <ImageView
+                    android:id="@+id/scan_comment_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@null"
+                    android:focusable="false"
+                    android:src="@drawable/scan_item_comment_img" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/replay_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/right_num_tv"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:drawableTop="@drawable/scan_right"
+                        android:gravity="center"
+                        android:text="256"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/no_right_num_tv"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:drawableTop="@drawable/scan_no_right"
+                        android:gravity="center"
+                        android:text="44"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/reply_comment_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1.0dip"
+            android:layout_marginRight="1.0dip"
+            android:background="#fff5f5f5"
+            android:orientation="vertical"
+            android:paddingBottom="5.0dip"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="5.0dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/reply_more_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/height_0.5"
+            android:layout_marginLeft="@dimen/height_0.5"
+            android:layout_marginRight="@dimen/height_0.5"
+            android:background="@drawable/replay_more_selector"
+            android:gravity="center"
+            android:padding="5.0dip"
+            android:text="更多评论(8)"
+            android:textColor="@color/black"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

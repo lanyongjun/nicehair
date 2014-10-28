@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/hair_coose_bg_color"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/loadFailure_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loadfailure"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/loadfail_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击屏幕 重新加载"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/loadinge_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/top_loading" />
+
+</LinearLayout>

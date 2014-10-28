@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/layout_zone"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/zone_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/zone_title_bg"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="15.0dip" >
+
+            <ImageView
+                android:id="@+id/iv_zone_search"
+                android:layout_width="44.5dip"
+                android:layout_height="22.5dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="11.0dip"
+                android:paddingRight="11.0dip"
+                android:src="@drawable/btn_topic_search" />
+
+            <ImageView
+                android:id="@+id/iv_zone_publish"
+                android:layout_width="45.5dip"
+                android:layout_height="23.5dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="11.0dip"
+                android:paddingRight="11.0dip"
+                android:src="@drawable/btn_topic_publish" />
+
+            <RadioGroup
+                android:id="@+id/zone_radioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="30.0dip"
+                android:layout_marginBottom="7.5dip"
+                android:layout_marginLeft="12.5dip"
+                android:layout_marginRight="12.5dip"
+                android:layout_toLeftOf="@+id/iv_zone_publish"
+                android:layout_toRightOf="@+id/iv_zone_search"
+                android:background="@drawable/tab_bg"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/btn_zone_topic_all"
+                    android:layout_width="0.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/radio_topic_all_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="@string/zone_base_section_tab_alltopics"
+                    android:textColor="@drawable/wp_text_selector"
+                    android:textSize="15.0sp" />
+
+                <RadioButton
+                    android:id="@+id/btn_zone_hot_tag"
+                    android:layout_width="0.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/radio_zone_hot_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/zone_tab_hot_tag"
+                    android:textColor="@drawable/wp_text_selector"
+                    android:textSize="15.0sp" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_loading"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_zone_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.app.choumei.hairstyle.common.MyImageView
+        android:id="@+id/miv_item_hair"
+        android:layout_width="132.0dip"
+        android:layout_height="196.0dip"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:scaleType="centerCrop" />
+
+</LinearLayout>

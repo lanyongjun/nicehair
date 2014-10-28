@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="250.0dip"
+        android:layout_height="134.0dip"
+        android:background="@drawable/save_dialog" >
+
+        <ImageView
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12.0dip"
+            android:src="@drawable/toast_save_ok" />
+
+        <TextView
+            android:id="@+id/toast_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ok"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12.0dip"
+            android:text="图片已保存到相册"
+            android:textColor="#ffffffff"
+            android:textSize="16.0sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.app.choumei.hairstyle"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <com.lan.nicehair.waterfall.widget.XListView
+        android:id="@+id/water_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fastScrollEnabled="true"
+        android:paddingLeft="7.0dip"
+        android:paddingRight="7.0dip"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

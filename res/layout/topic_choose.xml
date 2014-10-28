@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="20.0dip" >
+
+    <LinearLayout
+        android:id="@+id/menu_camera"
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dip"
+        android:background="@drawable/choose_item_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/camera"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_localphoto"
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/choose_item_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/localphoto"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu_close"
+        android:layout_width="fill_parent"
+        android:layout_height="55.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/choose_cancel_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancle"
+            android:textColor="@color/white"
+            android:textSize="18.0sp" />
+    </LinearLayout>
+
+</LinearLayout>

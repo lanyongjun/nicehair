@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@id/iv_hair_line"
+        android:layout_width="1.0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="42.0dip"
+        android:background="@color/hair_date_line" />
+
+    <com.lan.nicehair.widget.TopBarView
+        android:id="@id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/noTry"
+        android:layout_width="171.5dip"
+        android:layout_height="128.5dip"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/zwsd"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@id/list_hair"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/topbar"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:dividerHeight="0.0dip"
+        android:fadingEdge="none"
+        android:listSelector="@color/transparent" />
+
+</RelativeLayout>

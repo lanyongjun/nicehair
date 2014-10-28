@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.app.choumei.hairstyle"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/zone_bg"
+        android:orientation="vertical" >
+
+        <com.lan.nicehair.widget.TopBarView
+            android:id="@+id/topbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/layout_loading"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <com.lan.nicehair.common.refresh_list.RefreshListView
+            android:id="@+id/list_zone_topic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/zone_bg"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/transparent"
+            android:dividerHeight="12.5dip"
+            android:fadingEdge="none"
+            android:listSelector="@color/transparent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffe5e5e5"
+        android:orientation="horizontal"
+        android:padding="8.0dip"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/post_input_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/input_camera" />
+
+        <EditText
+            android:id="@+id/post_comment_input"
+            android:layout_width="0.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="4.0"
+            android:background="@drawable/none_underline_shape"
+            android:inputType="text"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" />
+
+        <TextView
+            android:id="@+id/post_input_send"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="9.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/send"
+            android:textColor="#ff595959"
+            android:textSize="22.0sp" />
+    </LinearLayout>
+
+</RelativeLayout>

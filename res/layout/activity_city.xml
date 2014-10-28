@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.lan.nicehair.widget.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/list_city"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/list_city_line"
+        android:dividerHeight="1.0dip"
+        android:fadingEdge="none"
+        android:listSelector="@color/transparent" />
+
+    <ListView
+        android:id="@+id/list_city2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/list_city_line"
+        android:dividerHeight="1.0dip"
+        android:fadingEdge="none"
+        android:listSelector="@color/transparent"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/list_region"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/list_city_line"
+        android:dividerHeight="1.0dip"
+        android:fadingEdge="none"
+        android:listSelector="@color/transparent"
+        android:visibility="gone" />
+
+</LinearLayout>

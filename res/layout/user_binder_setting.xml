@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.lan.nicehair.widget.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/setting_recommand_wxRl"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip" >
+
+            <ImageView
+                android:id="@+id/hairStyleIv"
+                android:layout_width="21.5dip"
+                android:layout_height="18.5dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32.0dip"
+                android:background="@drawable/weibo_setting_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25.0dip"
+                android:layout_toRightOf="@+id/hairStyleIv"
+                android:text="@string/bind_weibo"
+                android:textColor="@color/zone_list_button"
+                android:textSize="17.0sp" />
+
+            <ImageView
+                android:id="@+id/setting_bind_sinaBlog"
+                android:layout_width="52.0dip"
+                android:layout_height="32.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15.0dip"
+                android:src="@drawable/me_set_up_close" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="17.0dip"
+                android:layout_toRightOf="@+id/hairStyleIv"
+                android:background="@color/userinfo_line" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting_feedbackRl"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip" >
+
+            <ImageView
+                android:id="@+id/hairStyleIv1"
+                android:layout_width="24.0dip"
+                android:layout_height="21.5dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32.0dip"
+                android:background="@drawable/tencent_weibo_setting_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="22.5dip"
+                android:layout_toRightOf="@+id/hairStyleIv1"
+                android:text="@string/bind_tencent_weibo"
+                android:textColor="@color/zone_list_button"
+                android:textSize="17.0sp" />
+
+            <ImageView
+                android:id="@+id/setting_bind_tencentBlog"
+                android:layout_width="52.0dip"
+                android:layout_height="32.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15.0dip"
+                android:src="@drawable/me_set_up_close" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="14.5dip"
+                android:layout_toRightOf="@+id/hairStyleIv1"
+                android:background="@color/userinfo_line" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting_recommand_wxRl2"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip" >
+
+            <ImageView
+                android:id="@+id/hairStyleIv2"
+                android:layout_width="20.5dip"
+                android:layout_height="19.5dip"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="32.0dip"
+                android:background="@drawable/qzone_setting_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="26.0dip"
+                android:layout_toRightOf="@+id/hairStyleIv2"
+                android:text="@string/bind_qzone"
+                android:textColor="@color/zone_list_button"
+                android:textSize="17.0sp" />
+
+            <ImageView
+                android:id="@+id/setting_bind_qqZone"
+                android:layout_width="52.0dip"
+                android:layout_height="32.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15.0dip"
+                android:src="@drawable/me_set_up_close" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="18.0dip"
+                android:layout_toRightOf="@+id/hairStyleIv2"
+                android:background="@color/userinfo_line" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

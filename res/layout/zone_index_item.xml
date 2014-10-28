@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10.0dip"
+        android:background="@drawable/radius_layout_shape"
+        android:padding="2.0dip" >
+
+        <com.app.choumei.hairstyle.common.MyImageView
+            android:id="@+id/post_img"
+            android:layout_width="fill_parent"
+            android:layout_height="200.0dip"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/zone_index_item_default" />
+
+        <LinearLayout
+            android:id="@+id/post_title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post_img"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="5.0dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/post_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff3a3b3f"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_below="@+id/post_title_layout"
+            android:orientation="horizontal"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip" >
+
+            <com.app.choumei.hairstyle.common.MyImageView
+                android:id="@+id/post_user_head"
+                android:layout_width="25.0dip"
+                android:layout_height="25.0dip"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:src="@drawable/zone_index_item_head" />
+
+            <TextView
+                android:id="@+id/post_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dip"
+                android:layout_toRightOf="@+id/post_user_head"
+                android:gravity="center_vertical"
+                android:textColor="#fff17b36"
+                android:textSize="14.0sp" />
+
+            <ImageView
+                android:id="@+id/post_read_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3.0dip"
+                android:layout_toLeftOf="@+id/post_read_num"
+                android:contentDescription="@null"
+                android:src="@drawable/zone_index_item_read" />
+
+            <TextView
+                android:id="@+id/post_read_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6.0dip"
+                android:layout_toLeftOf="@+id/post_comment_img"
+                android:textColor="#ffdadada"
+                android:textSize="14.0sp" />
+
+            <ImageView
+                android:id="@+id/post_comment_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3.0dip"
+                android:layout_toLeftOf="@+id/post_comment_num"
+                android:contentDescription="@null"
+                android:src="@drawable/comment_img" />
+
+            <TextView
+                android:id="@+id/post_comment_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5.0dip"
+                android:textColor="#ffdadada"
+                android:textSize="14.0sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

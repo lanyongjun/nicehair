@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.app.choumei.hairstyle.widget.TopBarView
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fadingEdge="none"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18.0dip"
+                android:layout_marginTop="15.0dip"
+                android:text="@string/feedback_label"
+                android:textColor="@color/zone_list_button"
+                android:textSize="16.0sp" />
+
+            <EditText
+                android:id="@+id/user_feedback_inputMsgEt"
+                android:layout_width="fill_parent"
+                android:layout_height="158.0dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_marginTop="8.5dip"
+                android:background="@drawable/me_set_up_input_box"
+                android:gravity="top|left|center"
+                android:hint="@string/content_feedback"
+                android:minLines="5"
+                android:padding="8.0dip"
+                android:textColor="@color/feedback_input"
+                android:textColorHighlight="@color/zone_list_time"
+                android:textSize="14.0sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18.0dip"
+                android:layout_marginTop="15.0dip"
+                android:text="@string/contact_label"
+                android:textColor="@color/zone_list_button"
+                android:textSize="16.0sp" />
+
+            <EditText
+                android:id="@+id/user_feedback_contactEt"
+                android:layout_width="fill_parent"
+                android:layout_height="35.0dip"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_marginTop="8.5dip"
+                android:background="@drawable/me_set_up_input_box"
+                android:hint="@string/content_feedback_contact"
+                android:inputType="phone"
+                android:paddingLeft="8.0dip"
+                android:paddingRight="8.0dip"
+                android:singleLine="true"
+                android:textColor="@color/feedback_input"
+                android:textColorHighlight="@color/zone_list_time"
+                android:textSize="14.0sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

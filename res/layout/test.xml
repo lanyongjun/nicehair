@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/radiogroup"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/tab_height"
+    android:layout_gravity="bottom"
+    android:background="@drawable/hair_bar_bg"
+    android:orientation="horizontal"
+    android:paddingTop="5dip" >
+
+    <RadioButton
+        android:id="@+id/radio_choumeibang"
+        style="@style/main_tab_bottom"
+        android:drawablePadding="4dp"
+        android:drawableTop="@drawable/tab_zone_selector"
+        android:tag="radio_choumeibang"
+        android:text="@string/main_choumeibang" />
+
+    <RadioButton
+        android:id="@+id/radio_hairscan"
+        style="@style/main_tab_bottom"
+        android:drawablePadding="1dp"
+        android:drawableTop="@drawable/tab_hairshow_selector"
+        android:tag="radio_hairscan"
+        android:text="@string/main_hairscan" />
+
+    <RadioButton
+        android:id="@+id/radio_discover"
+        style="@style/main_tab_bottom"
+        android:drawableTop="@drawable/tab_discover_selector"
+        android:tag="radio_discover"
+        android:text="@string/main_discover" />
+
+    <RadioButton
+        android:id="@+id/radio_me"
+        style="@style/main_tab_bottom"
+        android:drawablePadding="1dp"
+        android:drawableTop="@drawable/tab_me_selector"
+        android:tag="radio_me"
+        android:text="@string/main_me" />
+
+</RadioGroup>

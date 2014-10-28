@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <shape>
+            <corners android:radius="7.0dip" />
+            <solid android:color="@color/setting_logout_press" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape>
+            <corners android:radius="7.0dip" />
+            <solid android:color="@color/setting_logout_press" />
+        </shape>
+    </item>
+    <item android:state_selected="true">
+        <shape>
+            <corners android:radius="7.0dip" />
+            <solid android:color="@color/setting_logout_press" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <corners android:radius="7.0dip" />
+            <solid android:color="@color/setting_logout" />
+        </shape>
+    </item>
+</selector>

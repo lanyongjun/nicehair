@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lan.nicehair"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="com.lan.nicehair.app.InitApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_app"
+        android:label="@string/app_name"
+        android:theme="@style/translucent_theme" >
+        <activity
+            android:name="com.lan.nicehair.activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/translucent_theme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ZoneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/translucent_theme" />
+        <activity
+            android:name=".activity.FindHairActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/translucent_theme" />
+        <activity
+            android:name=".activity.DisCoverActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/translucent_theme" />
+        <activity
+            android:name=".activity.MeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/translucent_theme" />
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/translucent_theme" />
+        <activity
+            android:name=".activity.ChangeHairActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/translucent_theme" />
+        <activity
+            android:name=".activity.TopicSearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/translucent_theme"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".activity.PublishActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/translucent_theme"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".activity.PhotoPagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/translucent_theme" />
+        <activity
+            android:name=".activity.CameraActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/translucent_theme" />
+        <activity
+            android:name=".activity.PostInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/translucent_theme" />
+        <activity
+            android:name=".activity.HairCommentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/translucent_theme" />
+    </application>
+
+</manifest>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/hair_coose_bg_color"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:background="#e0000000"
+            android:gravity="center_vertical"
+            android:padding="2.0dip" >
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                style="@style/customButtonstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="6.0dip"
+                android:background="@null"
+                android:padding="4.0dip"
+                android:src="@drawable/scan_back_selector" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/scan_history"
+                android:textColor="@android:color/white"
+                android:textSize="20.0sp" />
+
+            <ImageButton
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dip"
+                android:background="@android:color/transparent"
+                android:src="@drawable/poster_share_up" />
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/adpager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</FrameLayout>
