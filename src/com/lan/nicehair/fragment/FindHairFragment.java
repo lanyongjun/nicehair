@@ -82,7 +82,7 @@ public class FindHairFragment extends Fragment implements IXListViewListener{
 			public void onItemClick(PLA_AdapterView<?> parent, View view,
 					int position, long id) {
 				// TODO Auto-generated method stub
-				if(position<=1)return;
+				if(position<1)return;
 				FindHairItem info=mAdapter.mListInfos.get(position-1);
 				Intent intent = new Intent(getActivity(),HairCommentActivity.class);
 				Bundle mBundle = new Bundle();    

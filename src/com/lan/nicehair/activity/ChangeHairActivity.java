@@ -87,6 +87,7 @@ public class ChangeHairActivity extends BaseActivity implements OnDialogListener
 	private String mRightText;
 	private ModelPopup mPopup;
 	private int selectPos=0;
+	//设定的是dp值，为适应多分辨率手机
 	private float mDpWidth=140f;
 	private float mDpHeight=140f;
 	@Override
@@ -101,7 +102,7 @@ public class ChangeHairActivity extends BaseActivity implements OnDialogListener
 		mTopBar.mTvRight.setText(Html.fromHtml(mRightText));
 		mHairs=new Hairs();
 		loadAssetsRes();
-		mPopup = new ModelPopup(this, this);
+		mPopup = new ModelPopup(this,this,true);
 		adapter=new ImageAdapter(mHairs.female_show); 
 		mListView.setAdapter(adapter);
 		String fileName=mHairs.female_try.get(0);
@@ -272,36 +273,6 @@ public class ChangeHairActivity extends BaseActivity implements OnDialogListener
 		}
 		return null;
 	}
-	/**
-	 * 
-	 * 系统相机拍照
-	 */
-	private void takePhoto() {
-		// TODO Auto-generated method stub
-		//执行拍照前，应该先判断SD卡是否存在
-		String SDState = Environment.getExternalStorageState();
-		if(!SDState.equals(Environment.MEDIA_MOUNTED))
-		{
-			AppToast.showShortText(ChangeHairActivity.this, "内存卡不存在");
-			return;
-		}
-		try {				
-			Uri photoUri = getContentResolver().insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
-					new ContentValues());
-			if (photoUri != null) {
-				Intent i = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-				i.putExtra(android.provider.MediaStore.EXTRA_OUTPUT, photoUri);
-				startActivityForResult(i, SELECT_PIC_BY_TACK_PHOTO);
-				
-			} else {					
-				AppToast.showShortText(ChangeHairActivity.this, "发生意外，无法写入相册");
-			}
-		} catch (Exception e) {
-			// TODO: handle exception
-			e.printStackTrace();
-			AppToast.showShortText(ChangeHairActivity.this, "发生意外，无法写入相册");
-		}
-	}
 	 protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
 	        super.onActivityResult(requestCode, resultCode, intent);
 	        if (resultCode == RESULT_OK) {
@@ -311,7 +282,7 @@ public class ChangeHairActivity extends BaseActivity implements OnDialogListener
 	        		String picPath=intent.getStringExtra("path");
 	        		Bitmap bitmap=ImageUtil.getLocalThumbImg(picPath, 320, 640,"jpg");
 	        		if(bitmap!=null)
-	        		mModeIv.setImageBitmap(bitmap);
+	        			mModeIv.setImageBitmap(bitmap);
 	        		break;
 	        	case SELECT_PIC_BY_PICK_PHOTO:	    
 	        		//选择图库图片结果

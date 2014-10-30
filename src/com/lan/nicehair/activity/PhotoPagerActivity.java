@@ -78,7 +78,7 @@ public class PhotoPagerActivity extends BaseActivity {
 			View view=getLayoutInflater().inflate(R.layout.item_pager_image, null);
 			ImageView iv=(ImageView)view.findViewById(R.id.image);
 			ProgressBar pBar=(ProgressBar)view.findViewById(R.id.loading);
-			mImageFetcher.loadImage(picArray[position], iv,pBar);
+			mImageFetcher.loadImage(picArray[position], iv,pBar,0);
 			collection.addView(view);
 			iv.setOnClickListener(new OnClickListener() {
 				

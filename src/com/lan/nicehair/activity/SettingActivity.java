@@ -39,7 +39,7 @@ public class SettingActivity extends BaseActivity {
     }
 	@OnClick(R.id.setting_aboutRl)
 	public void onAboutClicked(View v){
-       
+		startActivity(new Intent(SettingActivity.this, AboutUsActivity.class));
     }
 	@OnClick(R.id.setting_helpRl)
 	public void onHelpClicked(View v){

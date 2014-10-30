@@ -68,10 +68,13 @@ public abstract class ImageWorker {
 	 * @param imageView
 	 *            The ImageView to bind the downloaded image to.
 	 */
-	public void loadImage(Object data, ImageView imageView) {
-		loadImage(data,imageView,null);
+	public void loadImage(Object data, ImageView imageView,int round) {
+		loadImage(data,imageView,null,round);
 	}
-	public void loadImage(Object data, ImageView imageView,ProgressBar pBar) {
+	public void loadImage(Object data, ImageView imageView) {
+		loadImage(data,imageView,null,0);
+	}
+	public void loadImage(Object data, ImageView imageView,ProgressBar pBar,int round) {
 		Bitmap bitmap = null;
 
 		if (mImageCache != null) {
@@ -82,7 +85,7 @@ public abstract class ImageWorker {
 			// Bitmap found in memory cache
 			imageView.setImageBitmap(bitmap);
 		} else if (cancelPotentialWork(data, imageView)) {
-			final BitmapWorkerTask task = new BitmapWorkerTask(imageView,pBar);
+			final BitmapWorkerTask task = new BitmapWorkerTask(imageView,pBar,round);
 			final AsyncDrawable asyncDrawable = new AsyncDrawable(mContext.getResources(), mLoadingBitmap, task);
 			imageView.setImageDrawable(asyncDrawable);
 			task.execute(data);
@@ -229,12 +232,14 @@ public abstract class ImageWorker {
 		private Object data;
 		private final WeakReference<ImageView> imageViewReference;
 		private ProgressBar pBar=null;
+		private int round=0;//圆角角度
 		public BitmapWorkerTask(ImageView imageView) {
 			imageViewReference = new WeakReference<ImageView>(imageView);
 		}
-		public BitmapWorkerTask(ImageView imageView,ProgressBar pBar) {
+		public BitmapWorkerTask(ImageView imageView,ProgressBar pBar,int round) {
 			imageViewReference = new WeakReference<ImageView>(imageView);
 			this.pBar=pBar;
+			this.round=round;
 		}
 		@Override
 		protected void onPreExecute() {
@@ -301,7 +306,7 @@ public abstract class ImageWorker {
 
 			final ImageView imageView = getAttachedImageView();
 			if (bitmap != null && imageView != null) {
-				setImageBitmap(imageView, bitmap);
+				setImageBitmap(imageView, bitmap,round);
 			}
 			if(pBar!=null)
 				pBar.setVisibility(View.GONE);
@@ -352,15 +357,22 @@ public abstract class ImageWorker {
 	 * @param imageView
 	 * @param bitmap
 	 */
-	private void setImageBitmap(ImageView imageView, Bitmap bitmap) {
+	private void setImageBitmap(ImageView imageView, Bitmap bit,int round) {
+		Bitmap bitmap=null;
 		if (mFadeInBitmap) {
 			// Transition drawable with a transparent drwabale and the final
 			// bitmap
+			if(round>0) {
+				bitmap=ImageUtil.getRoundedCornerBitmap(bit, round);
+			}else {
+				bitmap=bit;
+			}
 			final TransitionDrawable td = new TransitionDrawable(new Drawable[] { new ColorDrawable(android.R.color.transparent),
 					new BitmapDrawable(mContext.getResources(), bitmap) });
 			// Set background to loading bitmap
-			imageView.setBackgroundDrawable(new BitmapDrawable(mContext.getResources(), mLoadingBitmap));
-
+			if(imageView.getBackground()==null) {
+				imageView.setBackgroundDrawable(new BitmapDrawable(mContext.getResources(), mLoadingBitmap));
+			}
 			imageView.setImageDrawable(td);
 			td.startTransition(FADE_IN_TIME);
 		} else {

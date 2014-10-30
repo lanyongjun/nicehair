@@ -14,7 +14,7 @@ public class ModelPopup extends PopupWindow implements android.view.View.OnClick
 
 	private OnDialogListener listener;
 	private View mPopView;
-	public ModelPopup(Context context, OnDialogListener listener) {  
+	public ModelPopup(Context context, OnDialogListener listener,boolean isShowMd) {  
         super(context);  
         this.listener=listener;
         LayoutInflater inflater = (LayoutInflater) context
@@ -27,6 +27,9 @@ public class ModelPopup extends PopupWindow implements android.view.View.OnClick
         Button btn_take_photo=(Button)mPopView.findViewById(R.id.btn_take_photo);
         Button btn_model=(Button)mPopView.findViewById(R.id.btn_model);
         Button btn_cancel=(Button)mPopView.findViewById(R.id.btn_cancel);
+        if(!isShowMd) {
+        	btn_model.setVisibility(View.GONE);
+        }
         btn_choose_photo.setOnClickListener(this);
         btn_take_photo.setOnClickListener(this);
         btn_model.setOnClickListener(this);
