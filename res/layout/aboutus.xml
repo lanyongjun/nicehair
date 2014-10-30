@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="4.0dip"
-            android:text="Email:service@choumei.cn"
+            android:text="Email:service@zuimei.cn"
             android:textColor="@color/about_email"
             android:textSize="14.0sp" />
 
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="4.0dip"
-            android:text="Tel:0755-88371130"
+            android:text="Tel:400-000-000"
             android:textColor="@color/about_email"
             android:textSize="14.0sp" />
 
@@ -40,7 +40,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="12.0dip"
             android:layout_marginTop="6.0dip"
-            android:text="版权所有 © 臭美文化传播"
+            android:text="版权所有 © 你最美"
             android:textColor="@color/about_email"
             android:textSize="12.0sp" />
     </LinearLayout>
